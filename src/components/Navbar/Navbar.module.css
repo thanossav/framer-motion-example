@@ -1,0 +1,161 @@
+.navbar {
+  /* border: 1px solid red; */
+  background-color: azure;
+  color: black;
+
+  height: 60px;
+
+  padding-block: 1rem;
+  padding-inline: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 0px 6px 19px 0px rgba(0, 0, 0, 0.44);
+}
+
+.content {
+  padding-inline: 2rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+/* ============== */
+/* LOGO AND TEXT  */
+/* ============== */
+
+.logo_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo_text {
+  margin-left: 1rem;
+  color: black;
+}
+
+/* ========== */
+/* NAVIGATION */
+/* ========== */
+
+.burger_menu_icon {
+  display: none;
+}
+
+.navigation_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navigation_list {
+  list-style: none;
+
+  display: flex;
+  gap: 1rem;
+
+  font-size: 1.2rem;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem;
+
+  /* border: 1px solid black; */
+}
+
+.nav_link_active {
+  border-bottom: 5px solid steelblue;
+}
+
+.sidebar_close_icon {
+  display: none;
+}
+
+@media screen and (max-width: 730px) {
+  .navigation_list {
+    z-index: 1;
+
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    width: 70vw;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #232323;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+    transform: translateX(0%);
+    transition: transform 500ms ease;
+  }
+
+  .navigation_list_hidden {
+    transform: translateX(100%);
+    transition: transform 500ms ease;
+  }
+
+  .sidebar_close_icon {
+    display: block;
+    height: 36px;
+    width: 36px;
+
+    padding: 1rem;
+
+    margin: 0;
+    margin-block: 1rem;
+  }
+
+  .list_item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid blue; */
+  }
+
+  .nav_link {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.5rem;
+
+    padding: 2rem;
+    padding-right: 0;
+
+    width: 100%;
+
+    /* border: 1px solid red; */
+  }
+
+  .nav_link_active {
+    border: 0;
+    border-left: 1rem solid #232323;
+    border-right: 1rem solid #232323;
+    background-color: white;
+    color: black;
+
+    transition: all 500ms;
+  }
+
+  .burger_menu_icon {
+    height: 60%;
+    display: block;
+  }
+}
