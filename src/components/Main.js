@@ -18,15 +18,15 @@ const Main = () => {
          {/* So Routes component need to be updated whenever the route is change */}
          {/* This is possible throught useLocation */}
          <AnimatePresence initial={true} exitBeforeEnter>
-            <div style={{ padding: '4rem', paddingTop: '4rem', paddingBottom: '4rem' }}>
-               <Routes location={location} key={location.pathname}>
-                  {/* <Route path="/" element={<App />} /> */}
-                  <Route path="/" element={<Home />} />
-                  <Route path="work" element={<OurWork />} />
-                  <Route path="about" element={<About />} />
-                  <Route path="contact" element={<Contact />} />
-               </Routes>
-            </div>
+            {/* <div style={{ padding: '4rem', paddingTop: '4rem', paddingBottom: '4rem' }}> */}
+            <Routes location={location} key={location.pathname}>
+               {/* <Route path="/" element={<App />} /> */}
+               <Route path="/" element={<Home />} />
+               <Route path="work" element={<OurWork />} />
+               <Route path="about" element={<About />} />
+               <Route path="contact" element={<Contact />} />
+            </Routes>
+            {/* </div> */}
          </AnimatePresence>
       </>
    );

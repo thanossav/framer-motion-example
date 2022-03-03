@@ -1,0 +1,105 @@
+/* ================================================
+=================== SECTIONS ===================
+================================================ */
+
+.section_full {
+  height: 100vh;
+}
+
+.section_half {
+  height: 50vh;
+}
+
+.section_25 {
+  height: 25vh;
+}
+
+.section_header {
+  height: calc(100vh - 60px - 2rem);
+}
+
+.section_white {
+  background-color: white;
+}
+
+.section_black {
+  background-color: black;
+}
+
+.section_first {
+  /* background-image: url("/public/img/barbershop.jfif"); */
+  background-image: url("https://www.w3schools.com/howto/img_parallax.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.section_second {
+  background-image: url("/public/img/mihalaras.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================
+=================== TEXT ===================
+============================================ */
+
+.sec_header {
+  /* font-size: 10vw; */
+  font-size: 144px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sec_header2 {
+  /* font-size: 5vw; */
+  font-size: 96px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sec_text {
+  /* font-size: 2.5vw; */
+  font-size: 72px;
+  text-align: center;
+}
+
+.card {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  padding: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media screen and (max-width: 730px) {
+  .sec_header {
+    /* font-size: 18vw; */
+    font-size: 72px;
+  }
+
+  .sec_header2 {
+    /* font-size: 8vw; */
+    font-size: 48px;
+  }
+
+  .sec_text {
+    /* font-size: 5vw; */
+    font-size: 36px;
+  }
+}
